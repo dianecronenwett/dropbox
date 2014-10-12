@@ -1,5 +1,5 @@
 //
-//  settingsViewController.swift
+//  createAccountViewController.swift
 //  dropbox
 //
 //  Created by diane cronenwett on 10/11/14.
@@ -8,17 +8,17 @@
 
 import UIKit
 
-class settingsViewController: UIViewController {
+class createAccountViewController: UIViewController {
 
-    @IBOutlet weak var settingsScroll: UIScrollView!
+    @IBAction func backAction(sender: AnyObject) {
+        navigationController!.popViewControllerAnimated(true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-settingsScroll.contentSize = CGSize(width: 320, height: 806)
-        
+
         // Do any additional setup after loading the view.
     }
-
- 
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

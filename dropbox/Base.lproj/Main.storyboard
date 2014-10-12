@@ -13,7 +13,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="existing_photos" id="cWm-BJ-kXm">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="725"/>
+                                <rect key="frame" x="0.0" y="10" width="320" height="725"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                         </subviews>
@@ -70,23 +70,42 @@
         <!--Settings-->
         <scene sceneID="Ucw-TX-KtP">
             <objects>
-                <viewController id="eWR-Eh-YFr" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wbe-o7-ZPW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="eWR-Eh-YFr" customClass="settingsSecondViewController" customModule="dropbox" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nWO-Rd-6VV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="settings" id="ESl-Uz-oaT">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="772"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Sks-mG-tqr">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="settings" id="m3Q-LH-pq7" customClass="se">
+                                        <rect key="frame" x="0.0" y="3" width="320" height="772"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iRD-wU-e0m">
+                                        <rect key="frame" x="69" y="706" width="206" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="uZ6-S4-G7p" kind="modal" id="ORw-4S-CZX"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="settings_tab" id="WR5-l5-Vfo"/>
+                    <connections>
+                        <outlet property="settingsSecondScroll" destination="Sks-mG-tqr" id="ne5-Hf-BZm"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wbe-o7-ZPW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="491" y="-991"/>
+            <point key="canvasLocation" x="480" y="-1001"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="e4a-XU-mwT">
@@ -310,18 +329,14 @@
             </objects>
             <point key="canvasLocation" x="1997" y="385"/>
         </scene>
-        <!--View Controller-->
+        <!--Welcome Back2 View Controller-->
         <scene sceneID="mLI-hQ-IkN">
             <objects>
-                <viewController id="0o2-zN-AKa" sceneMemberID="viewController">
+                <viewController id="0o2-zN-AKa" customClass="welcomeBack2ViewController" customModule="dropbox" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LLm-nr-8rL">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="create1" id="TXW-bE-3qj">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="BJ2-Nf-l1c">
                                 <rect key="frame" x="16" y="81" width="304" height="170"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -332,6 +347,10 @@
                                     <segue destination="Vra-gM-l24" kind="modal" animates="NO" id="Zlc-MS-mvA"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="create1" id="TXW-bE-3qj">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -551,6 +570,16 @@
                                         <rect key="frame" x="0.0" y="8" width="320" height="772"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="v8o-qR-iVA">
+                                        <rect key="frame" x="0.0" y="708" width="315" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="uZ6-S4-G7p" kind="modal" id="CK8-TS-pXD"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </scrollView>
                         </subviews>
@@ -818,8 +847,9 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="UOl-JZ-tQM"/>
-        <segue reference="e5a-j1-hil"/>
+        <segue reference="GKn-L0-gNj"/>
+        <segue reference="Wba-Qt-8PW"/>
         <segue reference="uwZ-Mk-3FS"/>
+        <segue reference="CK8-TS-pXD"/>
     </inferredMetricsTieBreakers>
 </document>

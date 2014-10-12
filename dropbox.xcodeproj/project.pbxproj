@@ -10,6 +10,10 @@
 		E44A37EA19EA348200AEA616 /* settingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44A37E919EA348200AEA616 /* settingsViewController.swift */; };
 		E44A37EC19EA4B4C00AEA616 /* createAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44A37EB19EA4B4C00AEA616 /* createAccountViewController.swift */; };
 		E44A37F019EB06E000AEA616 /* settingsSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44A37EF19EB06E000AEA616 /* settingsSecondViewController.swift */; };
+		E44A37F419EB228D00AEA616 /* backButton2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44A37F319EB228D00AEA616 /* backButton2ViewController.swift */; };
+		E44A37F619EB37D800AEA616 /* backButton3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44A37F519EB37D800AEA616 /* backButton3ViewController.swift */; };
+		E44A37F819EB387600AEA616 /* backButton4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44A37F719EB387600AEA616 /* backButton4ViewController.swift */; };
+		E44A37FA19EB38DC00AEA616 /* backButton5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44A37F919EB38DC00AEA616 /* backButton5ViewController.swift */; };
 		E4738B5619E7014600DA903E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4738B5519E7014600DA903E /* AppDelegate.swift */; };
 		E4738B5819E7014600DA903E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4738B5719E7014600DA903E /* ViewController.swift */; };
 		E4738B5B19E7014600DA903E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4738B5919E7014600DA903E /* Main.storyboard */; };
@@ -32,6 +36,10 @@
 		E44A37E919EA348200AEA616 /* settingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settingsViewController.swift; sourceTree = "<group>"; };
 		E44A37EB19EA4B4C00AEA616 /* createAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = createAccountViewController.swift; sourceTree = "<group>"; };
 		E44A37EF19EB06E000AEA616 /* settingsSecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settingsSecondViewController.swift; sourceTree = "<group>"; };
+		E44A37F319EB228D00AEA616 /* backButton2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = backButton2ViewController.swift; sourceTree = "<group>"; };
+		E44A37F519EB37D800AEA616 /* backButton3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = backButton3ViewController.swift; sourceTree = "<group>"; };
+		E44A37F719EB387600AEA616 /* backButton4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = backButton4ViewController.swift; sourceTree = "<group>"; };
+		E44A37F919EB38DC00AEA616 /* backButton5ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = backButton5ViewController.swift; sourceTree = "<group>"; };
 		E4738B5019E7014600DA903E /* dropbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dropbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4738B5419E7014600DA903E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4738B5519E7014600DA903E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +96,10 @@
 				E4738B5519E7014600DA903E /* AppDelegate.swift */,
 				E4738B5719E7014600DA903E /* ViewController.swift */,
 				E4738B5919E7014600DA903E /* Main.storyboard */,
+				E44A37F319EB228D00AEA616 /* backButton2ViewController.swift */,
+				E44A37F519EB37D800AEA616 /* backButton3ViewController.swift */,
+				E44A37F719EB387600AEA616 /* backButton4ViewController.swift */,
+				E44A37F919EB38DC00AEA616 /* backButton5ViewController.swift */,
 				E44A37E919EA348200AEA616 /* settingsViewController.swift */,
 				E4738B5C19E7014600DA903E /* Images.xcassets */,
 				E4738B5E19E7014600DA903E /* LaunchScreen.xib */,
@@ -222,9 +234,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E44A37EC19EA4B4C00AEA616 /* createAccountViewController.swift in Sources */,
+				E44A37F619EB37D800AEA616 /* backButton3ViewController.swift in Sources */,
+				E44A37F819EB387600AEA616 /* backButton4ViewController.swift in Sources */,
+				E44A37FA19EB38DC00AEA616 /* backButton5ViewController.swift in Sources */,
 				E4738B5819E7014600DA903E /* ViewController.swift in Sources */,
 				E4738B5619E7014600DA903E /* AppDelegate.swift in Sources */,
 				E44A37EA19EA348200AEA616 /* settingsViewController.swift in Sources */,
+				E44A37F419EB228D00AEA616 /* backButton2ViewController.swift in Sources */,
 				E44A37F019EB06E000AEA616 /* settingsSecondViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -306,7 +306,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="0o2-zN-AKa" kind="modal" animates="NO" id="tIR-dj-xzh"/>
+                                    <segue destination="0o2-zN-AKa" kind="push" id="tIR-dj-xzh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SZJ-oi-RHf">
@@ -327,12 +327,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="02y-fM-x3n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1997" y="385"/>
+            <point key="canvasLocation" x="2049" y="385"/>
         </scene>
-        <!--Welcome Back2 View Controller-->
+        <!--Back Button2 View Controller-->
         <scene sceneID="mLI-hQ-IkN">
             <objects>
-                <viewController id="0o2-zN-AKa" customClass="welcomeBack2ViewController" customModule="dropbox" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0o2-zN-AKa" customClass="backButton2ViewController" customModule="dropbox" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LLm-nr-8rL">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -344,26 +344,37 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Vra-gM-l24" kind="modal" animates="NO" id="Zlc-MS-mvA"/>
+                                    <segue destination="Vra-gM-l24" kind="push" id="Zlc-MS-mvA"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="create1" id="TXW-bE-3qj">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="z7n-aP-Z47">
+                                <rect key="frame" x="32" y="31" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButton:" destination="0o2-zN-AKa" eventType="touchUpInside" id="rme-US-7H2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                     </view>
                     <navigationItem key="navigationItem" id="mKI-xw-eJB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qag-xL-0d2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2341" y="385"/>
+            <point key="canvasLocation" x="2421" y="385"/>
         </scene>
-        <!--View Controller-->
+        <!--Back Button3 View Controller-->
         <scene sceneID="rBU-eG-2Xe">
             <objects>
-                <viewController id="Vra-gM-l24" sceneMemberID="viewController">
+                <viewController id="Vra-gM-l24" customClass="backButton3ViewController" customModule="dropbox" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yPN-YE-LVN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -379,7 +390,18 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Wpm-zk-bCQ" kind="modal" animates="NO" id="2s0-aL-j5a"/>
+                                    <segue destination="Wpm-zk-bCQ" kind="push" id="2s0-aL-j5a"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="CzM-mM-U2B">
+                                <rect key="frame" x="30" y="27" width="76" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButton3:" destination="Vra-gM-l24" eventType="touchUpInside" id="GGl-8U-fmo"/>
+                                    <action selector="backButton:" destination="0o2-zN-AKa" eventType="touchUpInside" id="vGc-f5-LBJ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -389,12 +411,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Omr-dy-f65" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2677" y="385"/>
+            <point key="canvasLocation" x="2769" y="385"/>
         </scene>
-        <!--View Controller-->
+        <!--Back Button4 View Controller-->
         <scene sceneID="BVh-mC-J0g">
             <objects>
-                <viewController id="Wpm-zk-bCQ" sceneMemberID="viewController">
+                <viewController id="Wpm-zk-bCQ" customClass="backButton4ViewController" customModule="dropbox" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sud-wv-IXN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -410,7 +432,19 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="dZv-1H-4Kp" kind="modal" animates="NO" id="66H-n5-k88"/>
+                                    <segue destination="dZv-1H-4Kp" kind="push" id="66H-n5-k88"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="E5C-q6-CTZ">
+                                <rect key="frame" x="21" y="26" width="76" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButton3:" destination="Vra-gM-l24" eventType="touchUpInside" id="4om-d6-mw6"/>
+                                    <action selector="backButton4:" destination="Wpm-zk-bCQ" eventType="touchUpInside" id="FoH-WL-gRc"/>
+                                    <action selector="backButton:" destination="0o2-zN-AKa" eventType="touchUpInside" id="28R-Jh-Rwb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -420,12 +454,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jLr-aD-Uwt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3021" y="385"/>
+            <point key="canvasLocation" x="3141" y="385"/>
         </scene>
-        <!--View Controller-->
+        <!--Back Button5 View Controller-->
         <scene sceneID="TSQ-kB-SQ5">
             <objects>
-                <viewController id="dZv-1H-4Kp" sceneMemberID="viewController">
+                <viewController id="dZv-1H-4Kp" customClass="backButton5ViewController" customModule="dropbox" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="slb-4u-POE">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -444,6 +478,16 @@
                                     <segue destination="cOK-XO-XlY" kind="modal" animates="NO" id="pAi-z2-zvf"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ghw-Cb-7Nj">
+                                <rect key="frame" x="25" y="28" width="77" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButton5:" destination="dZv-1H-4Kp" eventType="touchUpInside" id="fdo-my-fTj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -451,7 +495,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IDl-Pw-Wmi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3358" y="385"/>
+            <point key="canvasLocation" x="3514" y="385"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="wmo-eH-a04">
@@ -491,7 +535,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OoL-BR-rna" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3699" y="385"/>
+            <point key="canvasLocation" x="3903" y="385"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="KNi-5b-2WX">
@@ -521,7 +565,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eYl-eq-61S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4033" y="385"/>
+            <point key="canvasLocation" x="4237" y="385"/>
         </scene>
         <!--Favorites-->
         <scene sceneID="G0d-5v-9jX">
@@ -655,7 +699,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Inr-wO-ySi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4033" y="1101"/>
+            <point key="canvasLocation" x="4237" y="1101"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KT0-m3-0wV">
@@ -849,7 +893,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="GKn-L0-gNj"/>
         <segue reference="Wba-Qt-8PW"/>
-        <segue reference="uwZ-Mk-3FS"/>
+        <segue reference="pAi-z2-zvf"/>
         <segue reference="CK8-TS-pXD"/>
     </inferredMetricsTieBreakers>
 </document>

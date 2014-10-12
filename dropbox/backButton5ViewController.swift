@@ -1,20 +1,18 @@
 //
-//  createAccountViewController.swift
+//  backButton5ViewController.swift
 //  dropbox
 //
-//  Created by diane cronenwett on 10/11/14.
+//  Created by diane cronenwett on 10/12/14.
 //  Copyright (c) 2014 dianesorg. All rights reserved.
 //
 
 import UIKit
 
-class createAccountViewController: UIViewController {
+class backButton5ViewController: UIViewController {
 
-    @IBAction func backAction(sender: AnyObject)
-    {
+    @IBAction func backButton5(sender: AnyObject) {
         navigationController!.popViewControllerAnimated(true)
     }
-
     override func viewDidLoad() {
         super.viewDidLoad()
 

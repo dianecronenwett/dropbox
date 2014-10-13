@@ -15,7 +15,7 @@ class createAccountViewController: UIViewController {
         navigationController!.popViewControllerAnimated(true)
     }
 
-    override func viewDidLoad() {
+       override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
@@ -26,7 +26,16 @@ class createAccountViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+   
+    @IBAction func fNameTextField(sender: AnyObject) {
+    }
+  
+    @IBAction func lNameTextField(sender: AnyObject) {
+    }
+    @IBAction func onTap(sender: AnyObject)
+    { view.endEditing(true)
+    }
+    
     /*
     // MARK: - Navigation
 

@@ -70,7 +70,6 @@
         <!--Settings-->
         <scene sceneID="Ucw-TX-KtP">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wbe-o7-ZPW" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="eWR-Eh-YFr" customClass="settingsSecondViewController" customModule="dropbox" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nWO-Rd-6VV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -104,6 +103,7 @@
                         <outlet property="settingsSecondScroll" destination="Sks-mG-tqr" id="ne5-Hf-BZm"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wbe-o7-ZPW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="480" y="-1001"/>
         </scene>
@@ -298,9 +298,10 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="create_account" id="wdy-vW-zMN">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <gestureRecognizers/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MKP-k1-Buz">
-                                <rect key="frame" x="117" y="89" width="46" height="30"/>
+                                <rect key="frame" x="256" y="25" width="56" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -319,13 +320,52 @@
                                     <action selector="backAction:" destination="530-qb-moj" eventType="touchUpInside" id="3EO-h3-9Xd"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Johnny" minimumFontSize="17" id="jZ1-ir-8eJ">
+                                <rect key="frame" x="119" y="88" width="170" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="fNameTextField:" destination="530-qb-moj" eventType="editingChanged" id="UmA-cR-5lR"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Appleseed" minimumFontSize="17" id="tks-Wv-O6M">
+                                <rect key="frame" x="119" y="131" width="170" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="lNameTextField:" destination="530-qb-moj" eventType="editingChanged" id="QtW-HU-Rvv"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="johnny@gmail.com" minimumFontSize="17" id="on9-uU-zPY">
+                                <rect key="frame" x="119" y="175" width="170" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="super secret" minimumFontSize="17" id="0Ek-vp-3eN">
+                                <rect key="frame" x="119" y="220" width="170" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="2ke-ej-0bL" appends="YES" id="kBw-vn-37a"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="svZ-36-EmP"/>
                     <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="02y-fM-x3n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="2ke-ej-0bL">
+                    <connections>
+                        <action selector="onTap:" destination="530-qb-moj" id="lcv-VJ-rot"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2049" y="385"/>
         </scene>

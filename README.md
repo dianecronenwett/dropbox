@@ -19,7 +19,7 @@ Using mockups to link together in Xcode.
 ---- Optionals Included
  * [x] Optional: Add UITextFields for the forms so you can actually type in them and handle dismissing the keyboard.
 
-![Placeholder](placeholder.gif)
+![Image](dropbox_demo.gif)
 
 
  

@@ -16,8 +16,10 @@ Using mockups to link together in Xcode.
  * [x] Required: User can tap the area for "Having trouble signing in?"
  * [x] Required: User can log out from the Settings screen.
  
----- Optionals Included
+---- Optionals Included --------
  * [x] Optional: Add UITextFields for the forms so you can actually type in them and handle dismissing the keyboard.
+ 
+--------------------------------
 
 ![Image](dropbox_demo.gif)
 
